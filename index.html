@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#04060d" />
+<title>AGUITECH // Digital Engineering — Technology that dominates markets</title>
+<meta name="description" content="AGUITECH — Agencia mexicana premium. Software a medida, inteligencia artificial, automatización, marketing digital, BTL, web & apps, sistemas CRM/ERP/CMS, diseño, 3D. Trabajamos con marcas globales." />
+<meta property="og:title" content="AGUITECH — Digital Engineering" />
+<meta property="og:description" content="Construimos tecnología y experiencias que dominan mercados." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&family=Sora:wght@300;400;600;700;800&display=swap" />
+
+<link rel="stylesheet" href="./styles.css" />
+<link rel="icon" type="image/png" href="./assets/img/logo.png" />
+</head>
+<body>
+
+<!-- ═══════ GLOBAL FX ═══════ -->
+<canvas id="fx-particles" aria-hidden="true"></canvas>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ═══════ TOPBAR ═══════ -->
+<header class="topbar" id="topbar">
+  <a href="#system" class="brand" aria-label="AGUITECH">
+    <img src="./assets/img/logo.png" alt="AGUITECH" class="brand-logo" />
+  </a>
+  <nav class="topnav" aria-label="Sistema">
+    <a href="#system" data-nav>SISTEMA</a>
+    <a href="#work" data-nav>PROYECTOS</a>
+    <a href="#services" data-nav>SERVICIOS</a>
+    <a href="#clients" data-nav>CLIENTES</a>
+    <a href="#blog" data-nav>BLOG</a>
+    <a href="#init" data-nav>INICIAR</a>
+  </nav>
+  <div class="topstate">
+    <span class="dot"></span>
+    <span class="state-text">SYS // ONLINE</span>
+  </div>
+</header>
+
+<!-- BOOT SCREEN -->
+<div id="boot" class="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-line" data-after="◇ AGUITECH // DIGITAL ENGINEERING">◇</div>
+    <div class="boot-line" data-after="◇ LINK:// AGUILAR.TECHNOLOGIES    [OK]">◇</div>
+    <div class="boot-line" data-after="◇ BOOT // NEURAL SHELL v10       [OK]">◇</div>
+    <div class="boot-line" data-after="◇ CHECKING DEPENDENCIES …">◇</div>
+    <div class="boot-line" data-after="◇ RENDERING DIGITAL CORE …">◇</div>
+    <div class="boot-line" data-after="◇ READY">◇</div>
+  </div>
+</div>
+
+<main id="system">
+
+<!-- ════════════════════════════════════════════════════════════
+     01 — HERO · AGENCY HEADLINE
+════════════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <canvas id="city3d" class="city3d" aria-hidden="true"></canvas>
+  <div class="hero-mask" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-label">
+      <span class="label-bar"></span>
+      <span>AGUITECH // AGENCIA PREMIUM · MÉXICO</span>
+      <span class="label-version">v10.2026</span>
+    </div>
+
+    <h1 class="hero-h" data-split>
+      <span class="ln"><span class="wd">MARCAS QUE</span></span>
+      <span class="ln"><span class="wd accent" data-text="DOMINAN">DOMINAN</span></span>
+      <span class="ln"><span class="wd">MERCADOS.</span></span>
+    </h1>
+
+    <p class="hero-sub">
+      Marketing, tecnología y diseño para empresas que necesitan <em>resultados medibles</em>, no decks bonitos. 240+ proyectos entregados a SxxySecret, HP, Corona, McDonald's, Merz y más.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#init" class="btn btn-primary" data-magnetic>
+        <span>INICIAR PROYECTO</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </a>
+      <a href="#work" class="btn btn-ghost" data-magnetic>
+        <span>VER PROYECTOS</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-telemetry" aria-hidden="true">
+      <div class="tlm-cell"><span class="tlm-k">PROYECTOS</span><span class="tlm-v">240+</span></div>
+      <div class="tlm-cell"><span class="tlm-k">MARCAS</span><span class="tlm-v">50+</span></div>
+      <div class="tlm-cell"><span class="tlm-k">AÑOS</span><span class="tlm-v">14</span></div>
+      <div class="tlm-cell"><span class="tlm-k">PAÍSES</span><span class="tlm-v">9</span></div>
+      <div class="tlm-cell"><span class="tlm-k">STATUS</span><span class="tlm-v ok">● OPERATIONAL</span></div>
+    </div>
+  </div>
+
+  <a href="#el-problema" class="scroll-hint">
+    <span class="hint-label">SCROLL TO ENTER</span>
+    <span class="hint-arrow">↓</span>
+  </a>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     02 — EL PROBLEMA · WHY AGENCIES FAIL
+════════════════════════════════════════════════════════════════ -->
+<section id="el-problema" class="section problem" aria-labelledby="prob-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-eyebrow">// PROBLEMA</span>
+    </div>
+
+    <h2 id="prob-h" class="sec-h reveal">
+      TU MARCA YA ES COMPLEJA.<br/>
+      <span class="accent">TU AGENCIA NO DEBERÍA COMPLICARLA MÁS.</span>
+    </h2>
+
+    <p class="sec-lead reveal">
+      Marketing y tecnología ejecutados como <em>sistemas</em>, no como silos. Una agencia. Una dirección. Una cuenta con criterio.
+    </p>
+
+    <div class="chaos-stage" aria-hidden="true">
+      <svg class="chaos-svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="nodeGrad" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#ff3aa6"/>
+            <stop offset="1" stop-color="#ff7a3a"/>
+          </linearGradient>
+          <linearGradient id="synapseGrad" x1="0" x2="1">
+            <stop offset="0" stop-color="#ff3aa6" stop-opacity="0"/>
+            <stop offset="0.5" stop-color="#ff3aa6" stop-opacity="0.8"/>
+            <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
+          </linearGradient>
+          <radialGradient id="chaosGlow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#ff3aa6" stop-opacity="0.25"/>
+            <stop offset="1" stop-color="#ff3aa6" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="centralGlow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#00f0ff" stop-opacity="0.4"/>
+            <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <g class="lines-chaos" stroke="url(#nodeGrad)" stroke-width="1" fill="none">
+          <path d="M180 100 Q400 300 600 250" stroke-dasharray="4 4"/>
+          <path d="M900 120 Q700 350 500 320" stroke-dasharray="4 4"/>
+          <path d="M250 480 Q450 350 700 420" stroke-dasharray="4 4"/>
+          <path d="M950 460 Q750 350 600 380" stroke-dasharray="4 4"/>
+          <path d="M120 280 Q300 200 480 260" stroke-dasharray="4 4"/>
+          <path d="M1080 240 Q900 200 800 320" stroke-dasharray="4 4"/>
+        </g>
+
+        <g class="lines-order" stroke="url(#synapseGrad)" stroke-width="1.4" fill="none" opacity="0">
+          <path d="M600 300 L300 180"/>
+          <path d="M600 300 L300 420"/>
+          <path d="M600 300 L900 180"/>
+          <path d="M600 300 L900 420"/>
+          <path d="M600 300 L150 300"/>
+          <path d="M600 300 L1050 300"/>
+          <path d="M600 300 L600 90"/>
+          <path d="M600 300 L600 510"/>
+        </g>
+
+        <g class="nodes-chaos">
+          <g class="n"><circle cx="180" cy="100" r="34"/><text x="180" y="105">MKT</text></g>
+          <g class="n"><circle cx="900" cy="120" r="34"/><text x="900" y="125">BTL</text></g>
+          <g class="n"><circle cx="250" cy="480" r="34"/><text x="250" y="485">DISEÑO</text></g>
+          <g class="n"><circle cx="950" cy="460" r="34"/><text x="950" y="465">WEB</text></g>
+          <g class="n"><circle cx="120" cy="280" r="34"/><text x="120" y="285">CRM</text></g>
+          <g class="n"><circle cx="1080" cy="240" r="34"/><text x="1080" y="245">ERP</text></g>
+          <g class="n"><circle cx="700" cy="80" r="28"/><text x="700" y="85">AI</text></g>
+          <g class="n"><circle cx="500" cy="540" r="28"/><text x="500" y="545">3D</text></g>
+          <g class="n"><circle cx="800" cy="540" r="28"/><text x="800" y="545">CMS</text></g>
+        </g>
+
+        <g class="core" transform="translate(600 300)">
+          <circle r="160" fill="url(#chaosGlow)" class="glow-chaos"/>
+          <circle r="100" fill="url(#centralGlow)" class="glow-order" opacity="0"/>
+          <circle r="48" class="core-ring" fill="none"/>
+          <circle r="38" class="core-ring2" fill="none"/>
+          <path d="M-22 -10 L-6 -10 L0 -22 L6 -10 L22 -10 L10 0 L14 14 L0 6 L-14 14 L-10 0 Z" class="core-star"/>
+          <text y="-65" class="core-label-top">AGUITECH</text>
+          <text y="80" class="core-label-bot">CENTRAL CORE</text>
+        </g>
+      </svg>
+
+      <div class="chaos-state chaos-state-start">CAOS · 9 DISCIPLINAS SIN CONEXIÓN</div>
+      <div class="chaos-state chaos-state-end"  >ORDEN · 1 NÚCLEO CENTRAL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     03 — CAPACIDADES (NODES)
+════════════════════════════════════════════════════════════════ -->
+<section id="services" class="section caps" aria-labelledby="caps-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-eyebrow">// CAPACIDADES</span>
+    </div>
+
+    <h2 id="caps-h" class="sec-h reveal">
+      NO DEPARTAMENTOS.<br/>
+      <span class="accent">UN SISTEMA DE NODOS.</span>
+    </h2>
+
+    <p class="sec-lead reveal">
+      Cada proyecto se orquesta desde el mismo <em>core</em>: marketing, tech y diseño ejecutándose como una sola disciplina.
+    </p>
+
+    <div class="caps-board" role="list" aria-label="Nodos tecnológicos">
+      <article class="node n-1" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/01</span><h3>MKT DIGITAL</h3></div>
+        <div class="node-desc">
+          <p>Performance, paid media, social, SEO, content. Campañas que generan leads y ventas, no likes.</p>
+          <ul><li>Meta &amp; Google Ads</li><li>SEO técnico</li><li>Email automation</li><li>Analytics &amp; BI</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-2" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/02</span><h3>BTL</h3></div>
+        <div class="node-desc">
+          <p>Activaciones de punto de venta, sampling, trade marketing, eventos. Producción propia, promoters capacitadas.</p>
+          <ul><li>Sampling</li><li>Trade marketing</li><li>Promotoría</li><li>Eventos full-service</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-3" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/03</span><h3>WEB &amp; APPS</h3></div>
+        <div class="node-desc">
+          <p>Sitios que venden. Apps nativas, PWAs. Diseño y desarrollo hechos a mano por nuestro equipo.</p>
+          <ul><li>Next.js · React · SvelteKit</li><li>React Native · Swift · KMP</li><li>E-commerce headless</li><li>SEO técnico</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-4" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/04</span><h3>AI ENGINE</h3></div>
+        <div class="node-desc">
+          <p>Agentes IA conectados a tus datos. LLMs privados, RAG, visión computacional, automatizaciones.</p>
+          <ul><li>Claude · GPT · Llama · Mistral</li><li>LangGraph · CrewAI</li><li>RAG sobre knowledge base</li><li>Visión · OCR · NLU</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-5" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/05</span><h3>SISTEMAS PROPIOS</h3></div>
+        <div class="node-desc">
+          <p>CRM, ERP, CMS, facturación. Sin licencias infinitas. Hechos a la operación real de tu negocio.</p>
+          <ul><li>CRM multi-canal</li><li>ERP CFDI 4.0</li><li>CMS con IA</li><li>Workflows + integraciones</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-6" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/06</span><h3>DISEÑO</h3></div>
+        <div class="node-desc">
+          <p>Branding, packaging, UI/UX, ilustración, motion graphics. Sistemas visuales que sobreviven al launch.</p>
+          <ul><li>Brand &amp; identidad</li><li>Packaging 360°</li><li>UI/UX &amp; design system</li><li>Motion &amp; video</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-7" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/07</span><h3>3D EXPERIENCES</h3></div>
+        <div class="node-desc">
+          <p>Configuradores WebGL, sitios inmersivos, AR/VR. Marketing que la gente recuerda y la prensa publica.</p>
+          <ul><li>Three.js · R3F · Babylon</li><li>Shaders GLSL</li><li>Configuradores e-com</li><li>AR WebXR</li></ul>
+        </div>
+      </article>
+
+      <article class="node n-8" data-node role="listitem" tabindex="0">
+        <div class="node-core"><span class="node-id">A/08</span><h3>AUTOMATIZACIÓN</h3></div>
+        <div class="node-desc">
+          <p>Procesos que antes requerían personas, ahora ejecutados automáticamente. Con audit trail y reintentos.</p>
+          <ul><li>n8n · Temporal · Airflow</li><li>Workers distribuidos</li><li>Observabilidad</li><li>Webhooks + queues</li></ul>
+        </div>
+      </article>
+
+      <div class="caps-core" aria-hidden="true">
+        <div class="caps-core-inner">
+          <div class="caps-core-mono">AGUITECH</div>
+          <div class="caps-core-sub">CORE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     04 — CLIENTES · MARCAS QUE CONFÍAN
+════════════════════════════════════════════════════════════════ -->
+<section id="clients" class="section clients" aria-labelledby="cli-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-eyebrow">// CLIENTES</span>
+    </div>
+
+    <h2 id="cli-h" class="sec-h reveal">
+      NO LOS NOMBRAMOS.<br/>
+      <span class="accent">LOS CONSTRUIMOS.</span>
+    </h2>
+
+    <p class="sec-lead reveal">
+      Trabajamos con marcas globales y regionales. <em>Resultados medibles</em>, no decoración.
+    </p>
+
+    <div class="clients-wall">
+      <span class="cli">SxxySecret</span>
+      <span class="cli">HP Notiq</span>
+      <span class="cli">Corona</span>
+      <span class="cli">McDonald's</span>
+      <span class="cli">Merz</span>
+      <span class="cli">Pantogar</span>
+      <span class="cli">Anvar</span>
+      <span class="cli">Emite</span>
+      <span class="cli">Ascend</span>
+      <span class="cli">Fiesta Americana</span>
+      <span class="cli">Hooters</span>
+      <span class="cli">Demus</span>
+      <span class="cli">Color Coated</span>
+      <span class="cli">En Obra</span>
+      <span class="cli">Etiquetas SG</span>
+      <span class="cli">Freekraft</span>
+      <span class="cli">Codimexa</span>
+      <span class="cli">BancoOppe</span>
+      <span class="cli">AforeCoppel</span>
+      <span class="cli">Vips</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     05 — PROYECTOS DESTACADOS · GALLERY
+════════════════════════════════════════════════════════════════ -->
+<section id="work" class="section work" aria-labelledby="work-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-eyebrow">// PROYECTOS</span>
+    </div>
+
+    <h2 id="work-h" class="sec-h reveal">
+      NO TE LO CONTAMOS.<br/>
+      <span class="accent">LO CONSTRUIMOS.</span>
+    </h2>
+
+    <p class="sec-lead reveal">
+      Casos reales. Resultados verificables. Sin decoración.
+    </p>
+
+    <!-- Featured big case -->
+    <article class="case-hero">
+      <div class="case-hero-head">
+        <span class="case-tag">CASE STUDY · 240+ PROYECTOS</span>
+        <h3 class="case-client">SXXYSECRET</h3>
+        <p class="case-pitch">
+          Plataforma de contenido adulto con sistema de <em>agentes IA, recomendaciones dinámicas y CRM propietario.</em> Operación LATAM, escalable a millones de usuarios con tipado estricto y arquitectura multi-tenant.
+        </p>
+      </div>
+      <div class="case-hero-stage">
+        <div class="dash-stage">
+          <div class="dash-bar"></div>
+          <div class="dash-bar"></div>
+          <div class="dash-stats">
+            <div class="ds"><span>USUARIOS ACTIVOS</span><b>1.2M+</b></div>
+            <div class="ds"><span>AGENTES IA</span><b>14</b></div>
+            <div class="ds"><span>PAÍSES</span><b>9</b></div>
+            <div class="ds"><span>TIEMPO-REAL</span><b>●</b></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Grid 4 cases -->
+    <div class="cases-grid">
+      <a href="#" class="case-card" data-cat="BTL · SAMPLING">
+        <div class="cc-img" style="background:linear-gradient(135deg,#003478,#0066cc)">
+          <span class="cc-brand">CORONA</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">BTL · SAMPLING</span>
+          <h4>Activación 220 PDV en 12 estados</h4>
+          <p>Promotoría + sampling + trade marketing. Modelo replicable.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="PACKAGING">
+        <div class="cc-img" style="background:linear-gradient(135deg,#1a1a1a,#4a4a4a)">
+          <span class="cc-brand">MERZ</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">PACKAGING</span>
+          <h4>Línea facial premium a 360°</h4>
+          <p>Concepto, master, producción, control de calidad en imprenta.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="WEB · E-COM">
+        <div class="cc-img" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">
+          <span class="cc-brand">HP NOTIQ</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">WEB · E-COM</span>
+          <h4>E-commerce + sitio 380K SKUs</h4>
+          <p>Catálogo dinámico, checkout personalizado, integración ERP.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="SISTEMA · ERP">
+        <div class="cc-img" style="background:linear-gradient(135deg,#0a2540,#2dd4bf)">
+          <span class="cc-brand">EMITE</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">SISTEMA · ERP</span>
+          <h4>Facturación CFDI 4.0 multi-RFC</h4>
+          <p>Timbrado en tiempo real, addendas, conciliación bancaria.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="BTL · 350 PDV">
+        <div class="cc-img" style="background:linear-gradient(135deg,#dc2626,#f87171)">
+          <span class="cc-brand">McDONALD'S</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">BTL</span>
+          <h4>Sampling 350 sucursales</h4>
+          <p>Promoters uniformadas, rotafolios y reportes diarios.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="BRANDING · IDENTIDAD">
+        <div class="cc-img" style="background:linear-gradient(135deg,#16a34a,#84cc16)">
+          <span class="cc-brand">PANTOGAR</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">BRANDING</span>
+          <h4>Manual de marca LATAM</h4>
+          <p>Sistema visual, plantillas, tipografías, adaptaciones.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="3D · WEBGL">
+        <div class="cc-img" style="background:linear-gradient(135deg,#ec4899,#f472b6)">
+          <span class="cc-brand">COLOR COATED</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">3D · WEBGL</span>
+          <h4>Configurador 3D en navegador</h4>
+          <p>Render en tiempo real, integración con e-commerce.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="APP · iOS / ANDROID">
+        <div class="cc-img" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">
+          <span class="cc-brand">ASCEND</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">APP</span>
+          <h4>App nativa +20K descargas mes 1</h4>
+          <p>Login SSO, dashboard, notificaciones push, OTA updates.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="AI · CASTING">
+        <div class="cc-img" style="background:linear-gradient(135deg,#0a1628,#7c3aed)">
+          <span class="cc-brand">BANCOOPPE / AFORE</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">AI · CASTING</span>
+          <h4>Casting digital interactivo</h4>
+          <p>Captura, grabación, IA, generación de posters.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="MKT · PERFORMANCE">
+        <div class="cc-img" style="background:linear-gradient(135deg,#0ea5e9,#22d3ee)">
+          <span class="cc-brand">ANVAR</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">MKT</span>
+          <h4>Performance 360° · 4× ROAS</h4>
+          <p>Paid + social + email automation + creative testing.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="EVENTO · BTL">
+        <div class="cc-img" style="background:linear-gradient(135deg,#1e293b,#475569)">
+          <span class="cc-brand">FIESTA AMERICANA</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">EVENTO</span>
+          <h4>Lanzamiento Hooters</h4>
+          <p>Producción + staffing + cobertura multi-canal.</p>
+        </div>
+      </a>
+
+      <a href="#" class="case-card" data-cat="WEB · CMS + IA">
+        <div class="cc-img" style="background:linear-gradient(135deg,#059669,#10b981)">
+          <span class="cc-brand">DEMUS</span>
+        </div>
+        <div class="cc-meta">
+          <span class="cc-tag">WEB · CMS</span>
+          <h4>Sitio editorial con IA</h4>
+          <p>CMS a medida, redacción asistida, calendar editorial.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     06 — DIFERENCIADOR
+════════════════════════════════════════════════════════════════ -->
+<section class="section diff" aria-labelledby="diff-h">
+  <div class="diff-bg" aria-hidden="true"></div>
+  <div class="container diff-inner">
+    <h2 id="diff-h" class="diff-h">
+      <span class="dh-line">NO VENDEMOS HORAS.</span>
+      <span class="dh-line accent">CONSTRUIMOS SISTEMAS.</span>
+    </h2>
+
+    <p class="diff-sub">
+      Tu empresa no necesita otra agencia que facture horas.<br/>
+      Necesita <em>tecnología y marketing que resuelvan problemas reales.</em>
+    </p>
+
+    <div class="diff-track" aria-hidden="true">
+      <div class="track-row">
+        <span class="track-step" data-step="1">PROBLEMA</span>
+        <span class="track-arrow">→</span>
+        <span class="track-step" data-step="2">ESTRATEGIA</span>
+        <span class="track-arrow">→</span>
+        <span class="track-step" data-step="3">SISTEMA</span>
+        <span class="track-arrow">→</span>
+        <span class="track-step" data-step="4">RESULTADO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     07 — PROCESO
+════════════════════════════════════════════════════════════════ -->
+<section class="section process" aria-labelledby="proc-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <span class="sec-eyebrow">// PROCESO</span>
+    </div>
+
+    <h2 id="proc-h" class="sec-h reveal">
+      LÍNEA DE PRODUCCIÓN<br/>
+      <span class="accent">AGENCY-ENGINEERED.</span>
+    </h2>
+
+    <ol class="proc-track" aria-label="Proceso en 5 fases">
+      <li class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>DESCUBRIMOS</h3>
+          <p>Entendemos el problema real. No el síntoma. Conversaciones con operadores, datos vivos, observación.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>DISEÑAMOS</h3>
+          <p>Procesos en arquitectura. Diagramas, modelos de datos, contratos. Antes de una línea de código.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>CONSTRUIMOS</h3>
+          <p>Desarrollo tipado, tests, infra como código. Producción desde el día uno. Sin retrasos por "fase de stabilisation".</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>AUTOMATIZAMOS</h3>
+          <p>Eliminamos trabajo repetitivo. Los sistemas ejecutan; tu gente decide. Métricas, alertas, reintentos.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3>ESCALAMOS</h3>
+          <p>Convertimos el sistema en infraestructura para crecer. Multi-región, alta disponibilidad, observabilidad.</p>
+        </div>
+      </li>
+      <div class="proc-line" aria-hidden="true"></div>
+    </ol>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     08 — CASO DEEP-DIVE (REUSADO DE AGUITECH-TOP)
+════════════════════════════════════════════════════════════════ -->
+<section class="section case-deep" aria-labelledby="cd-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">08</span>
+      <span class="sec-eyebrow">// CASE · DEEP DIVE</span>
+    </div>
+
+    <h2 id="cd-h" class="sec-h reveal">
+      CASO REAL.<br/>
+      <span class="accent">VERIFICABLE.</span>
+    </h2>
+
+    <article class="case-deep-card">
+      <div class="case-deep-head">
+        <span class="case-tag">BANCOOPPE / AFORE COPPEL</span>
+        <h3 class="case-client-deep">Plataforma de casting interactivo</h3>
+        <p class="case-pitch-deep">
+          Diseñamos y desarrollamos una experiencia digital interactiva capaz de integrar <em>captura, grabación, procesamiento, inteligencia artificial y generación de contenido</em> en un único sistema propietario.
+        </p>
+      </div>
+
+      <div class="case-deep-grid">
+        <div class="ipad">
+          <div class="ipad-screen">
+            <div class="ipad-camera"></div>
+            <div class="ipad-header">
+              <span class="ipad-dot red"></span><span class="ipad-dot yellow"></span><span class="ipad-dot green"></span>
+              <span class="ipad-app">casting.rec</span>
+            </div>
+            <div class="ipad-body">
+              <div class="ipad-feed">
+                <div class="feed-tile"></div><div class="feed-tile t2"></div><div class="feed-tile t3"></div>
+                <div class="feed-tile t4"></div><div class="feed-tile t5"></div><div class="feed-tile t6"></div>
+              </div>
+              <div class="ipad-panel">
+                <div class="panel-row"><div class="pr-key">REC</div><div class="pr-val ok">● 00:42:18</div></div>
+                <div class="panel-row"><div class="pr-key">AI</div><div class="pr-val">scoring · 84%</div></div>
+                <div class="panel-row"><div class="pr-key">UPLOAD</div><div class="pr-val">2.4GB/s</div></div>
+                <div class="panel-bar"><span style="width:72%"></span></div>
+                <div class="panel-foot">casting.bancooppel.mx</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="case-callouts" aria-label="Subsistemas del proyecto">
+          <li class="cc cc-1"><span class="cc-dot"></span><span class="cc-key">CAPTURA</span><span class="cc-val">iPad · 4K · in-browser</span></li>
+          <li class="cc cc-2"><span class="cc-dot"></span><span class="cc-key">GRABACIÓN</span><span class="cc-val">WebCodecs · chunks</span></li>
+          <li class="cc cc-3"><span class="cc-dot"></span><span class="cc-key">AUDIO</span><span class="cc-val">WebRTC + post-proc</span></li>
+          <li class="cc cc-4"><span class="cc-dot"></span><span class="cc-key">IA</span><span class="cc-val">vision + speech-to-text</span></li>
+          <li class="cc cc-5"><span class="cc-dot"></span><span class="cc-key">POSTERS</span><span class="cc-val">generación + composición</span></li>
+          <li class="cc cc-6"><span class="cc-dot"></span><span class="cc-key">BACKEND</span><span class="cc-val">jobs · colas · storage</span></li>
+          <li class="cc cc-7"><span class="cc-dot"></span><span class="cc-key">DASHBOARD</span><span class="cc-val">métricas en vivo</span></li>
+          <li class="cc cc-8"><span class="cc-dot"></span><span class="cc-key">PROCESO</span><span class="cc-val">ETL · validación · entrega</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     09 — SERVICIOS DEEP
+════════════════════════════════════════════════════════════════ -->
+<section class="section svc-dark" aria-labelledby="sd-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">09</span>
+      <span class="sec-eyebrow">// SERVICIOS · DEEP</span>
+    </div>
+
+    <h2 id="sd-h" class="sec-h reveal">
+      TODO LO QUE HACEMOS<br/>
+      <span class="accent">BAJO UNA MISMA CUENTA.</span>
+    </h2>
+
+    <div class="svc-grid-deep">
+      <article class="svc-item">
+        <span class="svc-num-deep">A/01</span>
+        <h4>MKT DIGITAL</h4>
+        <p>Performance, paid media, social, SEO, content, email automation. Una sola cuenta lo orquesta.</p>
+        <ul>
+          <li>Setup de píxeles + GA4</li>
+          <li>Creative testing continuo</li>
+          <li>Reportes semanales</li>
+          <li>Cluster SEO + redacción</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/02</span>
+        <h4>BTL</h4>
+        <p>Activaciones, sampling, trade, eventos, promotoría. Equipo propio en operación.</p>
+        <ul>
+          <li>Producción de material POP</li>
+          <li>Promoters uniformadas</li>
+          <li>Reporte diario con foto/geo</li>
+          <li>Cobertura multi-canal</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/03</span>
+        <h4>WEB &amp; APPS</h4>
+        <p>Sitios que venden, apps que la gente usa, e-commerce con datos limpios.</p>
+        <ul>
+          <li>Next.js · React · SvelteKit</li>
+          <li>React Native · Swift · KMP</li>
+          <li>Stripe · MercadoPago</li>
+          <li>SEO técnico + Core Web Vitals</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/04</span>
+        <h4>AI ENGINE</h4>
+        <p>Agentes que ejecutan trabajo real en producción. No demos.</p>
+        <ul>
+          <li>LLMs privados / RAG</li>
+          <li>LangGraph · CrewAI · AutoGen</li>
+          <li>Visión · OCR · NLU</li>
+          <li>Integración con tu stack</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/05</span>
+        <h4>SISTEMAS PROPIOS</h4>
+        <p>CRM, ERP, CMS, facturación. Sin licencias infinitas, hechos a tu operación.</p>
+        <ul>
+          <li>CFDI 4.0 + addendas</li>
+          <li>Multi-warehouse</li>
+          <li>Pipeline visual + forecast</li>
+          <li>Permisos granulares</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/06</span>
+        <h4>DISEÑO</h4>
+        <p>Branding, packaging, UI/UX, motion. Sistemas visuales escalables.</p>
+        <ul>
+          <li>Manual de marca</li>
+          <li>Packaging 3D y producción</li>
+          <li>Design system Figma</li>
+          <li>Motion graphics</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/07</span>
+        <h4>3D EXPERIENCES</h4>
+        <p>Configuradores WebGL, simuladores, AR/VR. Marketing que la prensa publica.</p>
+        <ul>
+          <li>Three.js · R3F · Babylon</li>
+          <li>Shaders GLSL custom</li>
+          <li>WebXR / WebGPU</li>
+          <li>Video 3D con Cinema 4D</li>
+        </ul>
+      </article>
+      <article class="svc-item">
+        <span class="svc-num-deep">A/08</span>
+        <h4>AUTOMATIZACIÓN</h4>
+        <p>Procesos repetitivos ejecutados automáticamente con audit trail completo.</p>
+        <ul>
+          <li>n8n · Temporal · Airflow</li>
+          <li>Workers distribuidos</li>
+          <li>Observabilidad + dashboards</li>
+          <li>Reintentos y alertas</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     10 — TESTIMONIOS
+════════════════════════════════════════════════════════════════ -->
+<section class="section testi" aria-labelledby="ts-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">10</span>
+      <span class="sec-eyebrow">// TESTIMONIOS</span>
+    </div>
+
+    <h2 id="ts-h" class="sec-h reveal">
+      LO QUE DICEN<br/>
+      <span class="accent">NUESTROS CLIENTES.</span>
+    </h2>
+
+    <div class="testi-grid">
+      <article class="testi-card">
+        <p class="testi-quote">
+          AGUITECH no nos entregó una página — nos construyó un <em>sistema</em> que movió nuestra facturación 4×.
+        </p>
+        <div class="testi-author">
+          <span class="testi-name">CMO</span>
+          <span class="testi-co">Anvar</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <p class="testi-quote">
+          El equipo de BTL ejecutó 220 PDV en 90 días sin un solo retraso. Reportes diarios con foto y geo.
+        </p>
+        <div class="testi-author">
+          <span class="testi-name">Brand Manager</span>
+          <span class="testi-co">Corona</span>
+        </div>
+      </article>
+
+      <article class="testi-card">
+        <p class="testi-quote">
+          La plataforma de casting con IA fue la pieza más ambiciosa que hemos hecho. Verificable, escalable, propietaria.
+        </p>
+        <div class="testi-author">
+          <span class="testi-name">Director de Marketing</span>
+          <span class="testi-co">AforeCoppel</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     11 — BLOG
+════════════════════════════════════════════════════════════════ -->
+<section id="blog" class="section blog" aria-labelledby="bl-h">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">11</span>
+      <span class="sec-eyebrow">// BLOG</span>
+    </div>
+
+    <h2 id="bl-h" class="sec-h reveal">
+      INSIGHTS, CASOS<br/>
+      <span class="accent">Y FRAMEWORKS.</span>
+    </h2>
+
+    <div class="blog-grid">
+      <article class="post">
+        <div class="post-img" style="background:linear-gradient(135deg,#7c3aed,#ec4899)">
+          <span class="post-tag">CASO</span>
+        </div>
+        <div class="post-meta">
+          <span class="post-cat">CASO</span>
+          <span>12 Sep 2026</span>
+        </div>
+        <h4>Cómo duplicamos ventas online de una marca de cosmética en 4 meses</h4>
+        <p>Framework completo: paid + landing + email automation. Caso Pantogar.</p>
+      </article>
+
+      <article class="post">
+        <div class="post-img" style="background:linear-gradient(135deg,#0ea5e9,#06b6d4)">
+          <span class="post-tag">FRAMEWORK</span>
+        </div>
+        <div class="post-meta">
+          <span class="post-cat">FRAMEWORK</span>
+          <span>28 Ago 2026</span>
+        </div>
+        <h4>El playbook de growth que usamos con todas nuestras marcas</h4>
+        <p>3 fases, 7 tácticas, 1 resultado medible. Lo que funciona en LATAM.</p>
+      </article>
+
+      <article class="post">
+        <div class="post-img" style="background:linear-gradient(135deg,#16a34a,#84cc16)">
+          <span class="post-tag">TENDENCIA</span>
+        </div>
+        <div class="post-meta">
+          <span class="post-cat">TENDENCIA</span>
+          <span>15 Ago 2026</span>
+        </div>
+        <h4>3D en e-commerce: por qué 2026 es el año</h4>
+        <p>WebGPU, Spline, configuradores en tiempo real.</p>
+      </article>
+
+      <article class="post">
+        <div class="post-img" style="background:linear-gradient(135deg,#dc2626,#f87171)">
+          <span class="post-tag">CASO</span>
+        </div>
+        <div class="post-meta">
+          <span class="post-cat">CASO</span>
+          <span>02 Ago 2026</span>
+        </div>
+        <h4>Activación nacional en 220 PDV en 12 estados</h4>
+        <p>Lo que aprendimos en 90 días activando Corona.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     12 — CTA FINAL + FOOTER
+════════════════════════════════════════════════════════════════ -->
+<section id="init" class="section cta" aria-labelledby="cta-h">
+  <div class="cta-bg" aria-hidden="true">
+    <canvas id="cta-stars" class="cta-stars"></canvas>
+  </div>
+  <div class="container cta-inner">
+    <h2 id="cta-h" class="cta-h" data-split>
+      <span class="ln"><span class="wd">¿LISTO PARA</span></span>
+      <span class="ln"><span class="wd accent">DOMINAR</span></span>
+      <span class="ln"><span class="wd">TU MERCADO?</span></span>
+    </h2>
+
+    <p class="cta-sub">
+      Cuéntanos qué quieres construir. <em>Respuesta honesta en menos de 24 horas hábiles.</em>
+    </p>
+
+    <a href="mailto:contacto@aguitech.com?subject=Quiero%20iniciar%20un%20proyecto" class="btn btn-primary btn-mega" data-magnetic>
+      <span>INICIAR PROYECTO</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </a>
+
+    <div class="cta-mark" aria-hidden="true">
+      <div class="cta-mark-line">AGUITECH</div>
+      <div class="cta-mark-sub">AGUILAR TECHNOLOGIES</div>
+      <div class="cta-mark-region">MÉXICO · CD RO</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="foot" role="contentinfo">
+  <div class="container foot-inner">
+    <div class="foot-block foot-brand">
+      <img src="./assets/img/logo.png" alt="AGUITECH" class="brand-logo-foot" />
+      <p class="foot-line">Technology that dominates markets.</p>
+    </div>
+    <div class="foot-block">
+      <h4>PRODUCTO</h4>
+      <ul>
+        <li><a href="#services">MKT Digital</a></li>
+        <li><a href="#services">BTL</a></li>
+        <li><a href="#services">Web &amp; Apps</a></li>
+        <li><a href="#services">AI</a></li>
+        <li><a href="#services">Sistemas</a></li>
+        <li><a href="#services">Diseño</a></li>
+      </ul>
+    </div>
+    <div class="foot-block">
+      <h4>EMPRESA</h4>
+      <ul>
+        <li><a href="#work">Proyectos</a></li>
+        <li><a href="#clients">Clientes</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="https://aguitech.com" target="_blank" rel="noopener">aguitech.com</a></li>
+        <li><a href="#">Freekraft</a></li>
+        <li><a href="#">Codimexa</a></li>
+      </ul>
+    </div>
+    <div class="foot-block">
+      <h4>CONTACTO</h4>
+      <ul class="foot-contact">
+        <li><a href="https://wa.me/521000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:contacto@aguitech.com">Email</a></li>
+        <li><a href="https://linkedin.com/company/aguitech" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="foot-meta">
+      <span>© 2026 AGUITECH</span>
+      <span class="foot-dot">·</span>
+      <span>Built in México</span>
+      <span class="foot-dot">·</span>
+      <span>v10.2026</span>
+    </div>
+  </div>
+</footer>
+
+<!-- libs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+<!-- app -->
+<script type="module" src="./main.js"></script>
+</body>
+</html>
